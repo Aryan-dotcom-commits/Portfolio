@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useMemo } from "react"
 import {
   Code,
   Rocket,
@@ -27,7 +27,7 @@ export default function ProfilePage() {
   const sectionRef = useRef<HTMLDivElement>(null)
 
   // Project data
-  const projects = [
+  const projects = useMemo(() => [
     {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
@@ -82,10 +82,10 @@ export default function ProfilePage() {
       githubUrl: "#",
       status: "In Development",
     },
-  ]
+  ], []);
 
   // Experience data
-  const experiences = [
+  const experiences = useMemo(() => [
     {
       company: "Codeyard",
       position: "Junior Full-Stack Developer",
@@ -100,10 +100,10 @@ export default function ProfilePage() {
       ],
       tech: ["React", "Node.js", "AWS", "Docker","MongoDB"],
     },
-  ]
+  ], [])
 
   // Enhanced section data
-  const sections = [
+  const sections = useMemo(() => [
     {
       title: "About Me",
       subtitle: "Full-Stack Developer & UI/UX Enthusiast",
@@ -164,7 +164,7 @@ export default function ProfilePage() {
       type: "skills",
       allowScroll: false,
     },
-  ]
+  ], []);
 
   // Typewriter effect
   useEffect(() => {
@@ -189,7 +189,7 @@ export default function ProfilePage() {
     if (sectionRef.current && sections[currentSection - 1]?.allowScroll) {
       sectionRef.current.scrollTop = 0
     }
-  }, [currentSection])
+  }, [currentSection, sections])
 
   // Enhanced scroll handler with better logic
   useEffect(() => {
@@ -245,7 +245,7 @@ export default function ProfilePage() {
 
     window.addEventListener("wheel", handleWheel, { passive: false })
     return () => window.removeEventListener("wheel", handleWheel)
-  }, [currentSection, isScrolling, sections.length])
+  }, [currentSection, isScrolling, sections.length, sections])
 
   // Keyboard navigation
   useEffect(() => {
@@ -557,7 +557,7 @@ export default function ProfilePage() {
             </div>
             <h2 className="text-4xl md:text-6xl font-light mb-6 text-white tracking-wide">Thank You!</h2>
             <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-              You've reached the end of my profile. Ready to start something amazing together?
+              You&apos;ve reached the end of my profile. Ready to start something amazing together?
             </p>
             <button
               onClick={() => setCurrentSection(1)}
