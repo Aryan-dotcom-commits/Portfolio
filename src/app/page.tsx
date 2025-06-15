@@ -10,7 +10,6 @@ import {
   Award,
   Github,
   Linkedin,
-  Twitter,
   ExternalLink,
   Calendar,
   MapPin,
