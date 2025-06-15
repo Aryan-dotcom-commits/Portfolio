@@ -485,10 +485,9 @@ export default function ProfilePage() {
             {currentSection === sections.length && (
               <div className="flex justify-center space-x-6 mb-8">
                 {[
-                  { icon: Github, href: "#", label: "GitHub" },
-                  { icon: Linkedin, href: "#", label: "LinkedIn" },
-                  { icon: Twitter, href: "#", label: "Twitter" },
-                  { icon: Mail, href: "#", label: "Email" },
+                  { icon: Github, href: "github.com/Aryan-dotcom-commits", label: "GitHub" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/in/aryan-pradhan-a91857289/", label: "LinkedIn" },
+                  { icon: Mail, href: "aryanpradhan773@gmail.com", label: "Email" },
                 ].map(({ icon: Icon, href, label }, idx) => (
                   <a
                     key={label}
