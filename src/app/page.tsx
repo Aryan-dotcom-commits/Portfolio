@@ -486,7 +486,7 @@ export default function ProfilePage() {
                 {[
                   { icon: Github, href: "github.com/Aryan-dotcom-commits", label: "GitHub" },
                   { icon: Linkedin, href: "https://www.linkedin.com/in/aryan-pradhan-a91857289/", label: "LinkedIn" },
-                  { icon: Mail, href: "aryanpradhan773@gmail.com", label: "Email" },
+                  { icon: Mail, href: "mailto:aryanpradhan773@gmail.com", label: "Email" },
                 ].map(({ icon: Icon, href, label }, idx) => (
                   <a
                     key={label}
