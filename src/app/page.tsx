@@ -46,13 +46,13 @@ export default function ProfilePage() {
       status: "In Development",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates",
-      tech: ["React", "Firebase", "Tailwind", "Socket.io"],
+      title: "Reserved For You",
+      description: "Ask her out digitally.",
+      tech: ["NEXTJS", "Tailwind.css"],
       image: "/task-management-32-1.png",
-      liveUrl: "#",
+      liveUrl: "https://reserved-for-you.vercel.app",
       githubUrl: "#",
-      status: "In Development",
+      status: "Live",
     },
     {
       title: "Real-time Chat Application",
