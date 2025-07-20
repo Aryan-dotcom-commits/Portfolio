@@ -49,9 +49,9 @@ export default function ProfilePage() {
       title: "Reserved For You",
       description: "Ask her out digitally.",
       tech: ["NEXTJS", "Tailwind.css"],
-      image: "/favicon.ico",
+      image: "/profile.ico",
       liveUrl: "https://reserved-for-you.vercel.app",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Aryan-dotcom-commits/reserved-for-you",
       status: "Live",
     },
     {
