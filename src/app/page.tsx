@@ -49,7 +49,7 @@ export default function ProfilePage() {
       title: "Reserved For You",
       description: "Ask her out digitally.",
       tech: ["NEXTJS", "Tailwind.css"],
-      image: "/task-management-32-1.png",
+      image: "/favicon.ico",
       liveUrl: "https://reserved-for-you.vercel.app",
       githubUrl: "#",
       status: "Live",
